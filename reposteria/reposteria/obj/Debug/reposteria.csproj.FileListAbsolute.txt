@@ -1,0 +1,16 @@
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\reposteria.exe.config
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\reposteria.exe
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\reposteria.pdb
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\Bunifu_UI_v1.52.dll
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csprojAssemblyReference.cache
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.login.resources
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Properties.Resources.resources
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csproj.GenerateResource.cache
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csproj.CoreCompileInputs.cache
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csproj.CopyComplete
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.exe
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.pdb
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\Guna.UI.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\MetroFramework.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\MetroFramework.Fonts.dll
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.venta.resources
