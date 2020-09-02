@@ -16,7 +16,7 @@ namespace reposteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new venta());
+            Application.Run(new login());
         }
     }
 }
