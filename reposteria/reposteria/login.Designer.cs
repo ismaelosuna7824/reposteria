@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.lblLema = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelRight = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -61,24 +60,12 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(210)))), ((int)(((byte)(215)))));
-            this.panelLeft.Controls.Add(this.lblLema);
             this.panelLeft.Controls.Add(this.pictureBox1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(362, 634);
             this.panelLeft.TabIndex = 1;
-            // 
-            // lblLema
-            // 
-            this.lblLema.AutoSize = true;
-            this.lblLema.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLema.ForeColor = System.Drawing.Color.White;
-            this.lblLema.Location = new System.Drawing.Point(61, 349);
-            this.lblLema.Name = "lblLema";
-            this.lblLema.Size = new System.Drawing.Size(224, 66);
-            this.lblLema.TabIndex = 7;
-            this.lblLema.Text = "Este es un texto \r\n       a mostrar";
             // 
             // pictureBox1
             // 
@@ -159,6 +146,7 @@
             this.btnClose.Size = new System.Drawing.Size(56, 52);
             this.btnClose.TabIndex = 6;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtPassword
             // 
@@ -263,7 +251,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelLeft.ResumeLayout(false);
-            this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelRight.ResumeLayout(false);
             this.panelRight.PerformLayout();
@@ -286,7 +273,6 @@
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Panel panelLeft;
-        private System.Windows.Forms.Label lblLema;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

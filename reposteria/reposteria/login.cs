@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using reposteria.clases;
 
 namespace reposteria
 {
@@ -25,9 +28,47 @@ namespace reposteria
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://www.facturadp.com/kenduAPI/api/");
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            // List all Names.  
+            HttpResponseMessage response = client.GetAsync($"usuario/?Usuario={txtUser.Text}&Password={txtUser.Text}&Conexion=2").Result;  // Blocking call!  
+            if (response.IsSuccessStatusCode)
+            {
+                var products = response.Content.ReadAsStringAsync().Result;
+                if(products.Length == 2) {
+                    MessageBox.Show("El Usuario o contraseña son incorrectos");
+                }
+                else
+                {
+                    var outs = products.TrimStart('[').TrimEnd(']').Split(',');
+
+                    publicId.IdUsuario = int.Parse(outs[0].Substring(13));
+                    venta frm = new venta();
+                    frm.Show();
+                    this.Hide();
+                }
+
+                //if(products.ToString().Length = 2) { }
+                /*
+                
+                */
+            }
+            else
+            {
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            }
+            Console.ReadLine();
+            /*
             venta frm = new venta();
             frm.Show();
-            this.Hide();
+            this.Hide();*/
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -64,6 +64,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\cEmpleado.cs" />
+    <Compile Include="clases\publicId.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
