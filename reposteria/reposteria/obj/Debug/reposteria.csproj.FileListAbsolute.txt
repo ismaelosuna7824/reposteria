@@ -14,3 +14,11 @@ E:\Git\reposteria\reposteria\reposteria\bin\Debug\Guna.UI.dll
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\MetroFramework.dll
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\MetroFramework.Fonts.dll
 E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.venta.resources
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.clientes.resources
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\Newtonsoft.Json.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\Newtonsoft.Json.xml
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.ServiceModel.Primitives.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.ServiceModel.Primitives.pdb
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Extensions.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Formatting.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Primitives.dll

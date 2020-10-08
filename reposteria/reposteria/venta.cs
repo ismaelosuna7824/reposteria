@@ -30,5 +30,17 @@ namespace reposteria
         {
 
         }
+
+        private void bunifuTileButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            clientes frm = new clientes();
+            this.Close();
+            frm.Show();
+        }
     }
 }

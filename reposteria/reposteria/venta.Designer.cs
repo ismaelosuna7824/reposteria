@@ -73,6 +73,7 @@
             this.bunifuElipse12 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnClientes = new Guna.UI.WinForms.GunaAdvenceButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
@@ -90,10 +91,10 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
-            this.metroTabControl1.Location = new System.Drawing.Point(12, 12);
+            this.metroTabControl1.Location = new System.Drawing.Point(12, 70);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 1;
-            this.metroTabControl1.Size = new System.Drawing.Size(776, 876);
+            this.metroTabControl1.Size = new System.Drawing.Size(776, 818);
             this.metroTabControl1.TabIndex = 0;
             // 
             // metroTabPage1
@@ -105,7 +106,7 @@
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(768, 837);
+            this.metroTabPage1.Size = new System.Drawing.Size(768, 779);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Sabores";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -175,7 +176,7 @@
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(768, 837);
+            this.metroTabPage2.Size = new System.Drawing.Size(768, 779);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Dulces";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -198,6 +199,7 @@
             this.bunifuTileButton4.Name = "bunifuTileButton4";
             this.bunifuTileButton4.Size = new System.Drawing.Size(176, 154);
             this.bunifuTileButton4.TabIndex = 7;
+            this.bunifuTileButton4.Click += new System.EventHandler(this.bunifuTileButton4_Click);
             // 
             // bunifuTileButton5
             // 
@@ -245,7 +247,7 @@
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(768, 837);
+            this.metroTabPage3.Size = new System.Drawing.Size(768, 779);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Tradicionales";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -608,11 +610,47 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnClientes
+            // 
+            this.btnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClientes.Animated = true;
+            this.btnClientes.AnimationHoverSpeed = 0.07F;
+            this.btnClientes.AnimationSpeed = 0.03F;
+            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
+            this.btnClientes.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnClientes.BorderColor = System.Drawing.Color.Black;
+            this.btnClientes.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnClientes.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnClientes.CheckedForeColor = System.Drawing.Color.White;
+            this.btnClientes.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnClientes.CheckedImage")));
+            this.btnClientes.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnClientes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClientes.FocusedColor = System.Drawing.Color.Empty;
+            this.btnClientes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
+            this.btnClientes.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnClientes.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnClientes.Location = new System.Drawing.Point(667, 12);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnClientes.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnClientes.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnClientes.OnHoverImage = null;
+            this.btnClientes.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnClientes.OnPressedColor = System.Drawing.Color.Black;
+            this.btnClientes.Radius = 10;
+            this.btnClientes.Size = new System.Drawing.Size(117, 42);
+            this.btnClientes.TabIndex = 4;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            // 
             // venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1270, 900);
+            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaDataGridView1);
@@ -678,5 +716,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private Guna.UI.WinForms.GunaAdvenceButton btnClientes;
     }
 }
