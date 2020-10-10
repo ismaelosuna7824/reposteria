@@ -36,14 +36,18 @@ namespace reposteria
             if (response.IsSuccessStatusCode)
             {
                 var products = response.Content.ReadAsStringAsync().Result;
-                if(products.Length == 2) {
+                //clientes = response.Content.ReadAsAsync<List<publicId>>().Result;
+                var res = response.Content.ReadAsAsync<List<dynamic>>().Result;
+                if (products.Length == 2) {
                     MessageBox.Show("El Usuario o contraseña son incorrectos");
                 }
                 else
                 {
-                    var outs = products.TrimStart('[').TrimEnd(']').Split(',');
+                   // var outs = products.TrimStart('[').TrimEnd(']').Split(',');
 
-                    publicId.IdUsuario = int.Parse(outs[0].Substring(13));
+                    publicId.IdUsuario = res[0].IdUsuario;
+                    //int a = outs[1].Length;
+                    publicId.nombre = res[0].Nombre;
                     venta frm = new venta();
                     frm.Show();
                     this.Hide();

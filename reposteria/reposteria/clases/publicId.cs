@@ -9,5 +9,6 @@ namespace reposteria.clases
     public static class publicId
     {
         public static int IdUsuario;
+        public static string nombre;
     }
 }

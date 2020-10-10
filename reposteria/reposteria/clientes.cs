@@ -21,6 +21,7 @@ namespace reposteria
         private DataView dv;
         DataTable dt;
         int id = 0;
+        public static int update = 0;
         public clientes()
         {
             InitializeComponent();
@@ -98,8 +99,7 @@ namespace reposteria
 
         private void gunaTileButton1_Click(object sender, EventArgs e)
         {
-            venta frm = new venta();
-            frm.Show();
+            
             this.Close();
         }
 
@@ -217,18 +217,32 @@ namespace reposteria
 
         private void dgvClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            id = int.Parse(this.dgvClientes.CurrentRow.Cells[0].Value.ToString()); 
-            txtNombre.Text = this.dgvClientes.CurrentRow.Cells[1].Value.ToString();
-            txtApePaterno.Text = this.dgvClientes.CurrentRow.Cells[2].Value.ToString();
-            txtApeMaterno.Text = this.dgvClientes.CurrentRow.Cells[3].Value.ToString();
-            txtEmail.Text = this.dgvClientes.CurrentRow.Cells[4].Value.ToString();
-            txtTelefono.Text = this.dgvClientes.CurrentRow.Cells[5].Value.ToString();
-            txtCalle.Text = this.dgvClientes.CurrentRow.Cells[6].Value.ToString();
-            txtNomExt.Text = this.dgvClientes.CurrentRow.Cells[7].Value.ToString();
-            txtNomInt.Text = this.dgvClientes.CurrentRow.Cells[8].Value.ToString();
-            txtColonia.Text = this.dgvClientes.CurrentRow.Cells[9].Value.ToString();
-            txtCiudad.Text = this.dgvClientes.CurrentRow.Cells[10].Value.ToString();
-            txtComentarios.Text = this.dgvClientes.CurrentRow.Cells[12].Value.ToString();
+            if(update == 0)
+            {
+                id = int.Parse(this.dgvClientes.CurrentRow.Cells[0].Value.ToString());
+                txtNombre.Text = this.dgvClientes.CurrentRow.Cells[1].Value.ToString();
+                txtApePaterno.Text = this.dgvClientes.CurrentRow.Cells[2].Value.ToString();
+                txtApeMaterno.Text = this.dgvClientes.CurrentRow.Cells[3].Value.ToString();
+                txtEmail.Text = this.dgvClientes.CurrentRow.Cells[4].Value.ToString();
+                txtTelefono.Text = this.dgvClientes.CurrentRow.Cells[5].Value.ToString();
+                txtCalle.Text = this.dgvClientes.CurrentRow.Cells[6].Value.ToString();
+                txtNomExt.Text = this.dgvClientes.CurrentRow.Cells[7].Value.ToString();
+                txtNomInt.Text = this.dgvClientes.CurrentRow.Cells[8].Value.ToString();
+                txtColonia.Text = this.dgvClientes.CurrentRow.Cells[9].Value.ToString();
+                txtCiudad.Text = this.dgvClientes.CurrentRow.Cells[10].Value.ToString();
+                txtComentarios.Text = this.dgvClientes.CurrentRow.Cells[12].Value.ToString();
+
+            }
+            else
+            {
+                venta.idCliente = int.Parse(this.dgvClientes.CurrentRow.Cells[0].Value.ToString());
+                string nombrec = this.dgvClientes.CurrentRow.Cells[1].Value.ToString() + " " + this.dgvClientes.CurrentRow.Cells[2].Value.ToString() + " " + this.dgvClientes.CurrentRow.Cells[3].Value.ToString();
+                venta frm = Owner as venta;
+                frm.txtClientes.Text = nombrec;
+                this.Hide();
+
+            }
+           
         }
 
 

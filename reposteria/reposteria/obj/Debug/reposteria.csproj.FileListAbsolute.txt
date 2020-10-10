@@ -2,7 +2,6 @@ E:\Git\reposteria\reposteria\reposteria\bin\Debug\reposteria.exe.config
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\reposteria.exe
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\reposteria.pdb
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\Bunifu_UI_v1.52.dll
-E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csprojAssemblyReference.cache
 E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.login.resources
 E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Properties.Resources.resources
 E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csproj.GenerateResource.cache
@@ -22,3 +21,8 @@ E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.ServiceModel.Primitives
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Extensions.dll
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Formatting.dll
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Primitives.dll
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Categorias.resources
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Productos.resources
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csprojAssemblyReference.cache
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\LibPrintTicket.dll
+E:\Git\reposteria\reposteria\reposteria\bin\Debug\LibPrintTicket.pdb
