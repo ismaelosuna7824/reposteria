@@ -23,6 +23,7 @@ E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Formatting.dll
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\System.Net.Http.Primitives.dll
 E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Categorias.resources
 E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Productos.resources
-E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csprojAssemblyReference.cache
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\LibPrintTicket.dll
 E:\Git\reposteria\reposteria\reposteria\bin\Debug\LibPrintTicket.pdb
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.Administrador.frmDashboard.resources
+E:\Git\reposteria\reposteria\reposteria\obj\Debug\reposteria.csprojAssemblyReference.cache

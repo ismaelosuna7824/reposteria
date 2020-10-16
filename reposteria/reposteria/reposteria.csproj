@@ -120,6 +120,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categorias.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     <Compile Include="venta.Designer.cs">
       <DependentUpon>venta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administrador\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,9 +211,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\cerrar-sesion.png" />
+    <None Include="Resources\herramienta-de-etiqueta-de-porcentajes-de-promociones-de-supermercado.png" />
+    <None Include="Resources\lista.png" />
+    <None Include="Resources\productos.png" />
+    <None Include="Resources\casa-icono-silueta.png" />
     <None Include="Resources\tradicional.jpeg" />
     <None Include="Resources\Image1.jpg" />
     <None Include="Resources\bakery-logo-cake-confectionery-frosting-icing-cake-png-clip-art.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using reposteria.Administrador;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -19,7 +20,7 @@ namespace reposteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new frmDashboard());
         }
         
     }

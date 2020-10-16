@@ -23,7 +23,7 @@ namespace reposteria
        
         string descripcion;
         double precios;
-        int id;
+        int id =0;
         public int idCategoria;
         public int totalEriculos;
         public static int idCliente = -1;
@@ -132,35 +132,43 @@ namespace reposteria
 
         private void gunaAdvenceButton1_Click_1(object sender, EventArgs e)
         {
-            double total = 0;
-            totalEriculos = 0;
-            DataGridViewRow row = new DataGridViewRow();
-            row.CreateCells(dgvVenta);
+            if (id == 0)
+            {
+                MessageBox.Show("No se ha selecionado un producto");
+            }
+            else
+            {
+                double total = 0;
+                totalEriculos = 0;
+                DataGridViewRow row = new DataGridViewRow();
+                row.CreateCells(dgvVenta);
 
-            row.Cells[0].Value = id;
-            row.Cells[1].Value = descripcion;
-            row.Cells[2].Value = txtCantidad.Text;
-            row.Cells[3].Value = precios.ToString();
-            row.Cells[4].Value = int.Parse(txtCantidad.Text) * precios;
-            dgvVenta.Rows.Add(row);
+                row.Cells[0].Value = id;
+                row.Cells[1].Value = descripcion;
+                row.Cells[2].Value = txtCantidad.Text;
+                row.Cells[3].Value = precios.ToString();
+                row.Cells[4].Value = int.Parse(txtCantidad.Text) * precios;
+                dgvVenta.Rows.Add(row);
 
-            
+
                 foreach (DataGridViewRow rows in dgvVenta.Rows)
                 {
 
 
                     total += Convert.ToDouble(rows.Cells["subtototal"].Value);
                     totalEriculos += Convert.ToInt32(rows.Cells["Cantidad"].Value);
-                    labeltotal.Text = Convert.ToString("$ " +total);
-                   
+                    labeltotal.Text = Convert.ToString("$ " + total);
+
 
 
 
 
                 }
-            
 
-            txtCantidad.Text = "";
+
+                txtCantidad.Text = "";
+                id = 0;
+            }
         }
 
         private void venta_Load(object sender, EventArgs e)
