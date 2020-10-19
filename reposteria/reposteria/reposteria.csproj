@@ -137,6 +137,7 @@
     <Compile Include="clases\cEmpleado.cs" />
     <Compile Include="clases\cProducto.cs" />
     <Compile Include="clases\cProductoDetalle.cs" />
+    <Compile Include="clases\cSucursal.cs" />
     <Compile Include="clases\cVenta.cs" />
     <Compile Include="clases\cVentaDetalle.cs" />
     <Compile Include="clases\imprimeTicket.cs" />
@@ -153,6 +154,9 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="methods\Categoria.cs" />
+    <Compile Include="methods\Producto.cs" />
+    <Compile Include="methods\Sucursales.cs" />
     <Compile Include="Productos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -211,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\empresa.png" />
     <None Include="Resources\cerrar-sesion.png" />
     <None Include="Resources\herramienta-de-etiqueta-de-porcentajes-de-promociones-de-supermercado.png" />
     <None Include="Resources\lista.png" />

@@ -93,6 +93,16 @@ namespace reposteria.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap empresa {
+            get {
+                object obj = ResourceManager.GetObject("empresa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap herramienta_de_etiqueta_de_porcentajes_de_promociones_de_supermercado {
             get {
                 object obj = ResourceManager.GetObject("herramienta-de-etiqueta-de-porcentajes-de-promociones-de-supermercado", resourceCulture);
